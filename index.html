@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background-color: rgb(44, 46, 87);
+        }
+        .parent {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 10px;
+            min-height: calc(100vh - 16px);
+            width: 100%;
+        }
+
+        .box {
+            border: 3px solid rgb(0, 0, 0);
+        }
+        
+        .div1 {
+            grid-area: 1 / 1 / 4 / 2;
+            background-color: rgb(151, 191, 83);
+        }
+
+        .div2 {
+            grid-area: 1 / 2 / 2 / 4;
+            background-color: rgb(151, 191, 83);
+        }
+
+        .div3 {
+            grid-area: 1 / 4 / 2 / 5;
+            background-color: rgb(182, 46, 55);
+        }
+
+        .div4 {
+            grid-area: 2 / 2 / 3 / 3;
+            background-color: rgb(220, 177, 76);
+        }
+
+        .div5 {
+            grid-area: 2 / 3 / 3 / 4;
+            background-color: rgb(182, 46, 55);
+        }
+
+        .div6 {
+            grid-area: 3 / 2 / 4 / 3;
+            background-color: rgb(182, 46, 55);
+        }
+
+        .div7 {
+            grid-area: 3 / 3 / 4 / 4;
+            background-color: rgb(220, 177, 76);
+        }
+
+        .div8 {
+            grid-area: 2 / 4 / 4 / 5;
+            background-color: rgb(151, 191, 83);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="div1 box"> </div>
+        <div class="div2 box"> </div>
+        <div class="div3 box"> </div>
+        <div class="div4 box"> </div>
+        <div class="div5 box"> </div>
+        <div class="div6 box"> </div>
+        <div class="div7 box"> </div>
+        <div class="div8 box"> </div>
+    </div>
+</body>
+
+</html>
